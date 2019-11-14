@@ -1,5 +1,7 @@
 body {
   min-height: 100%;
   background-color: map-get($theme-colors, 'light-ash');
+  padding-top: $nav-logo-size;
+  color: map-get($theme-colors, 'midnight-blue');
 }
 main {}

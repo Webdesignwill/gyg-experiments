@@ -1,0 +1,22 @@
+$_status-size: 12px;
+
+.status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &:before {
+    content: "";
+    display: block;
+    margin-right: $spacing-2;
+    border-radius: 50%;
+    height: $_status-size;
+    width: $_status-size;
+  }
+
+  &-active {
+    color: map-get($theme-colors, 'hillside-green');
+    &:before {
+      background-color: map-get($theme-colors, 'hillside-green');
+    }
+  }
+}
