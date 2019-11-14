@@ -1,15 +1,23 @@
 <div class="bg-color-white fixed-top px-4">
-  <nav class="navbar navbar-expand-md p-0">
+  <nav class="navbar navbar-expand-md p-0 justify-content-end">
     <div class="collapse navbar-collapse justify-content-between" id="site-navbar-primary">
-      <div class="navbar-nav font-size-xs py-4 flex-row">
-        <a class="nav-item nav-link mr-lg-4" href="#">Features</a>
-        <a class="nav-item nav-link mr-lg-4" href="#">Running Experiments</a>
-        <a class="nav-item nav-link mr-lg-4" href="#">Past Experiments</a>
-        <a class="nav-item nav-link" href="#">Recipes</a>
-      </div>
-      <div class="align-self-right">
-        <a class="nav-item nav-link" href="#">Search</a>
-      </div>
+      <ul class="navbar-nav font-size-xs py-4 flex-row">
+        <li class="nav-item">
+          <a class="nav-item nav-link mr-lg-4" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link mr-lg-4" href="#">Running Experiments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link mr-lg-4" href="#">Past Experiments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" href="#">Recipes</a>
+        </li>
+      </ul>
     </div>
+    <button data-control="toggle-sidebar" class="toggle-sidebar d-md-none" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="material-icons font-size-lg">menu</i>
+    </button>
   </nav>
 </div>

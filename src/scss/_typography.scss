@@ -5,8 +5,8 @@
 }
 
 a {
-  color: map-get($theme-colors, 'ui-slate');
-  &:hover, &:focus, &.active {
-    color: darken(map-get($theme-colors, 'ui-slate'), 20%);
+  color: map-get($theme-colors, 'ui-blue');
+  &:hover, &:focus {
+    color: darken(map-get($theme-colors, 'ui-blue'), 20%);
   }
 }

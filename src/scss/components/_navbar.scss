@@ -2,8 +2,44 @@
   min-height: $nav-logo-size;
   background: url('/static/assets/images/gyg-logo.svg') no-repeat left center;
   background-size: 50px;
+  transition: left $transition-speed;
+  left: 0;
+  position: relative;
+  .nav-link {
+    color: map-get($theme-colors, 'ui-slate');
+    &:hover, &:focus, &.active {
+      color: darken(map-get($theme-colors, 'ui-slate'), 20%);
+    }
+  }
+
+  .toggle-sidebar {
+    width: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      outline: none;
+      color: map-get($theme-colors, 'ui-blue');
+    }
+  }
 
   &-nav {
     margin-left: calc(#{$nav-logo-size} * 2);
+  }
+}
+
+body {
+  &.sidebar-active {
+    .navbar {
+      left: $sidebar-width-offset;
+      @include media-breakpoint-up(md) {
+        left: 0;
+      }
+      .toggle-sidebar {
+        width: 0;
+        overflow: hidden;
+      }
+    }
   }
 }
