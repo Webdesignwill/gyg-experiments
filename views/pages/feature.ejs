@@ -1,16 +1,64 @@
-<main role="main" class="pt-4 main-container">
-  <section class="container">
-    <div class="page-heading">
+<main role="main" class="pt-4 main-container container">
+  <section class="mb-5">
+    <header class="page-heading">
       <h1 class="font-size-md">TW-Reviews-ReviewerProfilePhoto</h1>
       <p class="mb-3 font-size-xxs d-flex flex-row color-ui-slate">
         <span class="status status-active mr-3">Active</span>
         Last assignment: 2 minutes ago
       </p>
-      <div class="d-flex flex-row">
-        <div class="badge mr-2">Reviews</div>
-        <div class="badge mr-2">Photos</div>
-        <div class="badge mr-2">Profile Photos</div>
-        <div class="badge badge-light"><i class="material-icons mr-1">add</i> Add Keyword</div>
+    </header>
+    <div class="d-flex flex-row">
+      <div class="badge mr-2">Reviews</div>
+      <div class="badge mr-2">Photos</div>
+      <div class="badge mr-2">Profile Photos</div>
+      <div class="badge badge-light"><i class="material-icons mr-1">add</i> Add Keyword</div>
+    </div>
+  </section>
+
+  <nav>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link d-flex flex-row" id="details-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="true" href="#">
+          <i class="material-icons font-size-xxs mr-2">subject</i>Details
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-flex flex-row active" id="desktop-tab" data-toggle="tab" href="#desktop" role="tab" aria-controls="desktop" aria-selected="true" href="#">
+          <span class="status status-active"></span>Desktop
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link d-flex flex-row" id="mobile-tab" data-toggle="tab" href="#mobile" role="tab" aria-controls="mobile" aria-selected="true" href="#">
+          <span class="status status-active"></span>Mobile
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="bg-color-white px-3 py-4">
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="details-tab">
+        <h3 class="mb-0">Overview</h3>
+      </div>
+      <div class="tab-pane fade show active" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
+        <h3 class="mb-0">Overview</h3>
+        <div class="d-flex flex-column flex-md-row pt-3 label-row">
+          <div class="label label-active d-flex flex-column">
+            <div class="inner">
+              <p class="mb-0 font-size-xxs font-weight-bold">Running for 12 days</p>
+              <p class="mb-0 font-size-xxs color-ui-slate">Started 1/10/2001 at 08:00</p>
+            </div>
+          </div>
+          <div class="label label-active d-flex flex-column">
+            <div class="inner">
+              <p class="mb-0 font-size-xxs font-weight-bold">Running for 12 days</p>
+              <p class="mb-0 font-size-xxs color-ui-slate">Started 1/10/2001 at 08:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="mobile" role="tabpanel" aria-labelledby="mobile-tab">
+        <h3 class="mb-0">Overview</h3>
       </div>
     </div>
   </section>

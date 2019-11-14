@@ -1,0 +1,17 @@
+.nav-tabs {
+  border-bottom: 0;
+  .nav-item {
+    &:not(:last-child) {
+      margin-right: $spacing-2;
+    }
+    .nav-link {
+      border: none;
+      background-color: map-get($theme-colors, 'light-slate');
+      color: map-get($theme-colors, 'ui-slate');
+
+      &.active, &:hover, &:focus {
+        background-color: map-get($theme-colors, 'white');
+      }
+    }
+  }
+}

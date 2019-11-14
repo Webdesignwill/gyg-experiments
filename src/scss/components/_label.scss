@@ -1,0 +1,22 @@
+.label {
+  border: 1px solid map-get($theme-colors, 'light-ash');
+  flex: 1;
+  cursor: pointer;
+
+  &-active {
+    .inner {
+      padding: $spacing-3 $spacing-4;
+      border-left: 5px solid map-get($theme-colors, 'hillside-green');
+    }
+  }
+
+  &:hover, &:focus {
+    .inner {
+      border-left-color: map-get($theme-colors, 'ui-blue');
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: $spacing-3;
+  }
+}
