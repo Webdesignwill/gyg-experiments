@@ -20,3 +20,10 @@
     }
   }
 }
+
+.text-success {
+  color: map-get($theme-colors, 'hillside-green') !important;
+}
+.text-warning {
+  color: map-get($theme-colors, 'basking-yellow') !important;
+}

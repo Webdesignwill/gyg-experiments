@@ -1,0 +1,8 @@
+.btn {
+  border-radius: 20px;
+  border: 0;
+
+  .material-icons {
+    font-size: map-get($font-size-map, 'xs');
+  }
+}

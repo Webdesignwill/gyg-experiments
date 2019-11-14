@@ -13,7 +13,7 @@ $_status-size: 10px;
     width: $_status-size;
   }
 
-  &-active {
+  &-success {
     color: map-get($theme-colors, 'hillside-green');
     &:before {
       background-color: map-get($theme-colors, 'hillside-green');
