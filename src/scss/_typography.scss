@@ -7,6 +7,7 @@
 a {
   color: map-get($theme-colors, 'ui-blue');
   &:hover, &:focus {
+    text-decoration: none;
     color: darken(map-get($theme-colors, 'ui-blue'), 20%);
   }
 }

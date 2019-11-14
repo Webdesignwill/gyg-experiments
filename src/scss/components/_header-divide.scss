@@ -1,0 +1,5 @@
+.header-divide {
+  margin: $spacing-4 0;
+
+  border-bottom: 1px solid map-get($theme-colors, 'light-slate');
+}

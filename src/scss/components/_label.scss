@@ -2,6 +2,19 @@
   border: 1px solid map-get($theme-colors, 'light-ash');
   flex: 1;
   cursor: pointer;
+  &:not(:last-child) {
+    margin-bottom: $spacing-3;
+  }
+
+  @include media-breakpoint-up(md) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
 
   &-active {
     .inner {
