@@ -1,0 +1,9 @@
+@each $z-index-value in
+  9000
+  10000
+  10500
+  1000000 {
+  .z-index-#{$z-index-value} {
+    z-index: $z-index-value !important;
+  }
+}

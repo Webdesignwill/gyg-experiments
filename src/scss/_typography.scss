@@ -1,0 +1,12 @@
+@each $font-size in $element-font-sizes {
+  #{nth($font-size, 1)} {
+    font-size: #{nth($font-size, 2)};
+  }
+}
+
+a {
+  color: map-get($theme-colors, 'ui-slate');
+  &:hover, &:focus, &.active {
+    color: darken(map-get($theme-colors, 'ui-slate'), 20%);
+  }
+}

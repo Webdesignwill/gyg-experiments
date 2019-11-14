@@ -1,0 +1,8 @@
+{
+  "name": "gyg-experiments",
+  "description": "GYG Experiments",
+  "repository": "https://github.com/Webdesignwill/gyg-experiements",
+  "logo": "",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}

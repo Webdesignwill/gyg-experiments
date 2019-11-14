@@ -1,0 +1,114 @@
+$font-family-roboto: 'Roboto', cursive;
+
+$font-map: (
+  "roboto": $font-family-roboto
+);
+
+$basking-yellow: #FFD938;
+$flamingo-pink: #FFE5EE;
+$glacial-blue: #CCECFF;
+$guiding-red: #FF5533;
+$hillside-green: #00CA6D;
+$lagoon-green: #025B61;
+$midnight-blue: #1A2B49;
+$off-road-brown: #985545;
+$outback-orange: #FF8C41;
+$peppermint-green: #D7FFDC;
+$poolside-blue: #81BEFF;
+$sorbet-yellow: #FBFFD7;
+$ui-blue: #1593FF;
+$ui-green: #00AA71;
+$ui-pink: #FF475E;
+$ui-slate: #6D7688;
+$white: #FFF;
+$muted-blue: #C6C8D0;
+$muted-brown: #EADDD8;
+$muted-green: #CBDDDF;
+$muted-orange: #FFE7D8;
+$light-ash: #F3F4F6;
+$light-sand: #FFF5F1;
+$light-slate: #E8E9EC;
+
+$theme-colors: (
+  "muted-blue": $muted-blue,
+  "muted-brown": $muted-brown,
+  "muted-green": $muted-green,
+  "muted-orange": $muted-orange,
+  "basking-yellow": $basking-yellow,
+  "flamingo-pink": $flamingo-pink,
+  "glacial-blue": $glacial-blue,
+  "guiding-red": $guiding-red,
+  "hillside-green": $hillside-green,
+  "lagoon-green": $lagoon-green,
+  "midnight-blue": $midnight-blue,
+  "off-road-brown": $off-road-brown,
+  "outback-orange": $outback-orange,
+  "peppermint-green": $peppermint-green,
+  "poolside-blue": $poolside-blue,
+  "sorbet-yellow": $sorbet-yellow,
+  "ui-blue": $ui-blue,
+  "ui-green": $ui-green,
+  "ui-pink": $ui-pink,
+  "ui-slate": $ui-slate,
+  "white": $white,
+  "light-ash": $light-ash,
+  "light-sand": $light-sand,
+  "light-slate": $light-slate,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  l: 1200px,
+  xl: 1366px
+);
+
+$font-size-xxs: ($font-size-base * 1);
+$font-size-xs: ($font-size-base * 1.25);
+$font-size-sm: ($font-size-base * 1.375);
+$font-size-m: ($font-size-base * 1.625);
+$font-size-md: ($font-size-base * 1.75);
+$font-size-lg: ($font-size-base * 2);
+$font-size-xl: ($font-size-base * 2.375);
+$font-size-xxl: ($font-size-base * 2.9375);
+$font-size-xxxl: ($font-size-base * 3.5);
+$font-size-xxxxl: ($font-size-base * 4);
+$font-size-ex: ($font-size-base * 6.5);
+$font-size-huge: ($font-size-base * 8.2);
+
+$font-size-map: (
+  (auto): 'auto',
+  (xxs): ($font-size-xxs),
+  (xs): ($font-size-xs),
+  (sm): ($font-size-sm),
+  (m): ($font-size-m),
+  (md): ($font-size-md),
+  (lg): ($font-size-lg),
+  (xl): ($font-size-xl),
+  (xxl): ($font-size-xxl),
+  (xxxl): ($font-size-xxxl),
+  (xxxxl): ($font-size-xxxxl),
+  (ex): ($font-size-ex),
+  (huge): ($font-size-huge)
+);
+
+$element-font-sizes: (
+  (h1): ($font-size-xl),
+  (h2): ($font-size-xl),
+  (h3): ($font-size-lg),
+  (h4): ($font-size-md),
+  (h5): ($font-size-sm),
+  (h6): ($font-size-xs),
+  (p): ($font-size-sm),
+  (small): ($font-size-xs),
+);
+
+$transition-speed: .8;
+
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 1rem;
+$spacing-4: 1.5rem;
+$spacing-5: 3rem;

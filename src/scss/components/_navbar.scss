@@ -1,0 +1,11 @@
+$_nav-logo-size: 80px;
+
+.navbar {
+  min-height: $_nav-logo-size;
+  background: url('/static/assets/images/gyg-logo.svg') no-repeat left center;
+  background-size: 50px;
+
+  &-nav {
+    margin-left: calc(#{$_nav-logo-size} * 2);
+  }
+}

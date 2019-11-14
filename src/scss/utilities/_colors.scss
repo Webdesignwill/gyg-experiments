@@ -1,0 +1,22 @@
+@each $key, $color in $theme-colors {
+  .color-#{$key} {
+    color: $color !important;
+  }
+
+  .bg-color-#{$key} {
+    background-color: $color !important;
+  }
+
+  @each $bp, $breakpoint in $grid-breakpoints {
+    @include media-breakpoint-up($bp) {
+
+      .color-#{$bp}-#{$key} {
+        color: $color !important;
+      }
+
+      .bg-color-#{$bp}-#{$key} {
+        background-color: $color !important;
+      }
+    }
+  }
+}

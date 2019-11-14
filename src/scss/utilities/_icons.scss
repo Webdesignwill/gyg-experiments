@@ -1,0 +1,39 @@
+$social-icon-size: 30px;
+
+.social-icon {
+  width: $social-icon-size;
+  height: $social-icon-size;
+}
+
+.instagram-icon {
+  background: url('/static/assets/images/instagram.svg') no-repeat center center;
+}
+.facebook-icon {
+  background: url('/static/assets/images/facebook.svg') no-repeat center center;
+  &-dark {
+    background-image: url('/static/assets/images/facebook-dark.svg');
+  }
+}
+.right-arrow {
+  display: block;
+  width:200px;
+  height: 34px;
+  background: url('/static/assets/images/arrow-straight.svg') no-repeat center center;
+}
+.arrow-curve-left {
+  position: absolute;
+  top: -90px;
+  left: -144px;
+  transform: rotate(90deg);
+  width:72px;
+  height: 200px;
+  background: url('/static/assets/images/arrow-curve-left.svg') no-repeat center center;
+}
+.arrow-curve-right {
+  position: absolute;
+  top: -25px;
+  right: -200px;
+  width:190px;
+  height: 60px;
+  background: url('/static/assets/images/arrow-curve-right.svg') no-repeat center center;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include ./partials/header.ejs %>
+</head>
+
+<body>
+  <main role="main" class="pt-4 px-3">
+    <div class="d-flex flex-column flex-md-row justify-content-between">
+      <div class="mb-4">
+        <h3 class="pb-2">Pages</h3>
+        <div class="d-flex flex-column">
+          <% for(let i=0; i < pages.length; i++) { %>
+            <p class="mb-0"><a href="<%= `/pages/${pages[i]}` %>"><%= pages[i] %></a></p>
+          <% } %>
+        </div>
+      </div>
+      <div class="mb-4">
+        <h3 class="pb-2">Components</h3>
+        <div class="d-flex flex-column">
+          <% for(let i=0; i < components.length; i++) { %>
+            <p class="mb-0"><a href="<%= `/components/${components[i]}` %>"><%= components[i] %></a></p>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
