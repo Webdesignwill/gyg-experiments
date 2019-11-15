@@ -5,4 +5,11 @@
   .material-icons {
     font-size: map-get($font-size-map, 'xs');
   }
+
+  &-primary {
+    background-color: map-get($theme-colors, 'ui-blue');
+    &:hover, &:focus {
+      background-color: darken(map-get($theme-colors, 'ui-blue'), 10%);
+    }
+  }
 }

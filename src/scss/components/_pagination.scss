@@ -1,0 +1,18 @@
+.pagination {
+  &-item {
+    &:not(:last-child) {
+      margin-right: $spacing-3;
+    }
+
+    &.active {
+      a {
+        color: map-get($theme-colors, 'midnight-blue');
+      }
+    }
+  }
+
+  .disabled {
+    color: map-get($theme-colors, 'ui-slate') !important;
+    cursor: not-allowed;
+  }
+}
